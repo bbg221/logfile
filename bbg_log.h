@@ -11,6 +11,7 @@ struct mylogStruct
 };
 
 std::shared_ptr<mylogStruct> getLogStream();
+int getLogFileNum();
 
 #define BBGLOG getLogStream()->mylog_<<__TIME__ <<" "<<__FILE__<<" "<<__LINE__<<" "
 
